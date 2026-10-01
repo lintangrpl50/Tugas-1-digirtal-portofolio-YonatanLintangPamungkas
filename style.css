@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #0f172a;
+    /* Warna latar gelap */
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.kartu-profil {
+    background-color: #1a2d4e;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #334155;
+}
+h1 {
+    font-size: 28px;
+    color: #afc175;
+    /* Biru muda */
+    margin-bottom: 6px;
+}
+.tagline {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+h2 {
+    font-size: 16px;
+    color: #afc175;
+    margin: 20px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+.kontak {
+    margin-top: 24px;
+    padding: 12px;
+    background: #0f172a;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+.kartu-profil:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(175, 193, 117, 0.15);
+  transition: all 0.3s ease;
+}
+h1:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+h2{
+  transition: 0.3s;
+}
+h2:hover{
+  color: #ffffff
+}
+li:hover {
+  background-color: #0e1c78;
+  padding-left: 10px;
+  border-left: 4px solid #4a5fff;
+  transition: all 0.25s ease;
+}
+a:hover {
+  color: #afc175;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.tagline:hover {
+  font-style: italic;
+  color: #6c7aff;
+  transition: 0.3s ease;
+}
+.kontak:hover {
+  color: #afc175;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 4px solid #afc175;
+}
+.foto-profil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(34, 156, 53, 0.4);
+  transition: all 0.3s ease;
+}
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 4px solid #afc175;
+}
+.foto-profil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(74, 95, 255, 0.4);
+  transition: all 0.3s ease;
+}
+.btn-tema {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.btn-tema:hover{
+  background: #38bdf8;
+  color: #0b1329
+}
+body.light-mode{
+  background: #f8fafc;
+  color: #0f172a
+}
+body.light-mode .profile-card {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  background-color: rgba (0, 0, 0, 0.7);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba (0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-overlay.show {
+  display: flex;
+}
+.modal-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+.btn-tutup {
+  margin: top 20px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
